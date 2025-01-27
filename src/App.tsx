@@ -1,4 +1,4 @@
-export default function App() {
+export function App() {
   return (
     <div className="text-gray-700 md:(mx-auto w-5xl)">
       <h1 className="my-4 flex text-xl space-x-4">

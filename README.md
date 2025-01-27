@@ -16,7 +16,13 @@ The template includes:
 1. eslint rules for react
 2. eslint rules for typescript
 3. eslint rules for prettier: provides standard code styles
-4. eslint rules for import: sort import statements in order
+4. eslint rules for import: sort import statements in order. The order is:
+   1. side effect imports
+   2. node.js builtins
+   3. packages
+   4. internal packages defined in `tsconfig.app.json`, e.g. `@/components`
+   5. parent imports: import '../xx'
+   6. other relative imports './xx'
 5. eslint rules for react-hooks
 6. eslint rules for react-refresh
 7. eslint rules for unocss: sort the `className` in jsx
@@ -33,7 +39,7 @@ The template includes:
 
 # How to use
 
-## get the seed project
+## 1. get the seed project
 
 you can use `degit` or `github template` to get the seed project:
 
@@ -45,14 +51,14 @@ npm install -g degit
 degit ludafa/react-project-scaffold your-project-name
 ```
 
-### 2. use `github template`
+### use `github template`
 
 1. open [this template project on github](https://github.com/ludafa/react-project-scaffold)
 2. use this template:
    ![image from clipboard](https://ik.imagekit.io/6mysxbs8t/xoMTnW942Eqp2ZpuValhM5EcF1CKQNl_AxWSMISkhZw.png)
 3. git clone your new repo and ready to start!
 
-## replace the placeholder string
+## 2. replace the placeholder string
 
 1. replace the project name in `package.json` / `react-project.code-workspace`
 2. rename the workspace file name from `react-project.code-workspace` to `your-project-name.code-workspace`.
