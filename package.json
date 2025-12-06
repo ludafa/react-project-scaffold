@@ -10,35 +10,42 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "@iconify/react": "^6.0.2",
+    "@tailwindcss/vite": "^4.1.17",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
-    "@iconify-json/logos": "^1.1.44",
-    "@iconify-json/solar": "^1.1.10",
-    "@types/react": "^18.3.4",
-    "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/eslint-plugin": "^8.3.0",
-    "@typescript-eslint/parser": "^8.3.0",
-    "@unocss/eslint-config": "^0.62.3",
-    "@unocss/preset-icons": "^0.62.3",
-    "@unocss/preset-typography": "^0.62.3",
-    "@unocss/preset-uno": "^0.62.3",
-    "@unocss/reset": "~0.62.3",
-    "@unocss/transformer-directives": "~0.62.3",
-    "@unocss/transformer-variant-group": "^0.62.3",
-    "@vitejs/plugin-react": "^4.3.1",
-    "animated-unocss": "^0.0.6",
-    "eslint": "^9.9.1",
-    "eslint-config-prettier": "~9.1.0",
-    "eslint-plugin-import": "~2.29.1",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react-refresh": "^0.4.11",
+    "@eslint/js": "^9.39.1",
+    "@iconify-json/logos": "^1.2.10",
+    "@iconify-json/solar": "^1.2.5",
+    "@iconify-json/svg-spinners": "^1.2.4",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.48.1",
+    "@typescript-eslint/parser": "^8.48.1",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "~10.1.8",
+    "eslint-plugin-import": "~2.32.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-simple-import-sort": "~12.1.1",
-    "prettier": "^3.3.3",
-    "typescript": "^5.5.4",
-    "unocss": "^0.62.3",
-    "vite": "^5.4.2"
+    "globals": "^16.5.0",
+    "prettier": "^3.7.4",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.48.1",
+    "vite": "npm:rolldown-vite@7.2.10"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:rolldown-vite@7.2.5"
+    },
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }

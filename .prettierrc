@@ -5,6 +5,7 @@
   "printWidth": 80,
   "semi": true,
   "experimentalTernaries": true,
+  "plugins": ["prettier-plugin-tailwindcss"],
   "overrides": [
     {
       "files": ["*.yml", "*.yaml"],

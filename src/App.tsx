@@ -1,11 +1,25 @@
+import { Icon } from '@iconify/react';
+
 export default function App() {
   return (
-    <div className="text-gray-700 md:(mx-auto w-5xl)">
-      <h1 className="my-4 flex text-xl space-x-4">
-        <i className="i-logos:github-icon animated animated-infinite animated-tada inline-block h-8 w-8" />
-        <i className="animated animated-infinite i-logos:vitejs animated-rubber-band inline-block h-8 w-8" />
-        <i className="animated animated-infinite i-logos:react animated-jello inline-block h-8 w-8" />
-        <i className="animated animated-infinite i-logos:typescript-icon animated-heart-beat inline-block h-8 w-8" />
+    <div className="text-gray-700 md:mx-auto md:w-5xl">
+      <h1 className="my-4 flex space-x-4 text-xl">
+        <Icon
+          icon="logos:github-icon"
+          className="animated animated-infinite animated-tada inline-block h-8 w-8"
+        />
+        <Icon
+          icon="logos:vitejs"
+          className="animated animated-infinite animated-rubber-band inline-block h-8 w-8"
+        />
+        <Icon
+          icon="logos:react"
+          className="animated animated-infinite animated-jello inline-block h-8 w-8"
+        />
+        <Icon
+          icon="logos:typescript-icon"
+          className="animated animated-infinite animated-heart-beat inline-block h-8 w-8"
+        />
       </h1>
       <h1 className="my-4 text-xl font-bold">Features</h1>
       <ul className="list-decimal pl-4">
@@ -22,7 +36,7 @@ export default function App() {
                 directive in css file
               </p>
             </li>
-            <li className="my-2">
+            <li className="text-md my-2">
               <p className="text-md">icon preset enabled</p>
             </li>
           </ul>

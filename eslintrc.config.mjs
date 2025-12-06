@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   root: true,
   env: { browser: true, es2020: true },
   extends: [
@@ -6,20 +6,22 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
     'prettier',
-    '@unocss',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs', '**/node_modules/**'],
+  ignorePatterns: ['dist', 'eslintrc.config.mjs', '**/node_modules/**'],
   parser: '@typescript-eslint/parser',
-  plugins: ['import', 'react-refresh', 'simple-import-sort'],
+  plugins: ['import', 'simple-import-sort'],
   rules: {
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     'import/no-duplicates': 'warn',
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
     'simple-import-sort/imports': 'warn',
     'simple-import-sort/exports': 'warn',
+    '@typescript-eslint/ban-ts-comment': [
+      'error',
+      {
+        'ts-ignore': 'allow-with-description',
+        'ts-expect-error': 'allow-with-description',
+      },
+    ],
   },
 };

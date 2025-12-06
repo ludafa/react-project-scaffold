@@ -1,7 +1,3 @@
-import 'virtual:uno.css';
-import '@unocss/reset/tailwind.css';
-import './main.css';
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
